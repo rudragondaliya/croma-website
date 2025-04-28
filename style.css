@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bi-search{
+    position: absolute;
+    right: 20px;
+}
+
+form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-item img{
+    height: 100px !important;
+    
+}
+
+#mini-slider{
+    scrollbar-width: none;
+}
+
+
+.offer-slider {
+    display: flex;
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    animation: slide 15s linear infinite;
+}
+
+#bank-slider{
+    scrollbar-width: none;
+}
+
+.bank-name {
+    font-weight: bold;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Start from right */
+    }
+    10% {
+        transform: translateX(0); /* Move to position */
+    }
+    90% {
+        transform: translateX(10); /* Remain in position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move completely to left */
+    }
+}
+
+.img-deal{
+    height: 400px;
+    width: 300px;   
+    border-radius: 10px; 
+}
+
+#summer-deal{
+    scrollbar-width: none;
+}
+
+.icon-card {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.icon-card img {
+    width: 100px;
+    height: 100px;
+}
+.section-title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #12daa8;
+    
+}
+
+
+.dropdown-item{
+    color: white !important;
+}
+
+#slider-2{
+    scrollbar-width: none;
+}
