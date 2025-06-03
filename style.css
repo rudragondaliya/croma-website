@@ -16,7 +16,7 @@ form{
 }
 
 .slider-item img{
-    height: 100px !important;
+    height: 150px !important;
     
 }
 
@@ -25,9 +25,26 @@ form{
 }
 
 
+
+.card {
+    border: none !important;
+    border-radius: 18px !important;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+ 
+  .category-img{
+    object-fit: cover !important;
+  }
+
+
 .offer-slider {
     display: flex;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden; 
     position: relative;
     animation: slide 15s linear infinite;
 }
@@ -42,16 +59,16 @@ form{
 
 @keyframes slide {
     0% {
-        transform: translateX(100%); /* Start from right */
+        transform: translateX(30%); 
     }
     10% {
-        transform: translateX(0); /* Move to position */
+        transform: translateX(0);
     }
     90% {
-        transform: translateX(10); /* Remain in position */
+        transform: translateX(10); 
     }
     100% {
-        transform: translateX(-100%); /* Move completely to left */
+        transform: translateX(-100%);
     }
 }
 
@@ -93,3 +110,109 @@ form{
 #slider-2{
     scrollbar-width: none;
 }
+
+/* product-1 */
+
+.main{
+    background-color: #1e1e1e !important;
+}
+
+.categories{
+    background-color: #1e1e1e;
+}
+
+
+.filter-btn {
+    background-color: #363636 !important;
+    color: white !important;
+    border: none !important;
+    
+  }
+
+  .filter-tag {
+    background-color: #00d6a3 !important;
+    color: black !important;
+    border: none !important;
+  }
+
+  .filter-tag .btn-close {
+    margin-left: 5px !important;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+  }
+
+  .sub-title {
+    font-size: 0.9rem !important;
+    color: #aaa !important;
+  }
+
+  .filter-bar {
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
+  }
+
+  .tag-bar {
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
+    margin-top: 1rem !important;
+  }
+
+
+  .products{
+    background-color: #1e1e1e;
+  }
+  .product-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: scale(1.03);
+  }
+  .product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background-color: #363636;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .product-title {
+    font-weight: bold;
+    font-size: 1rem;
+    height: 48px;
+    overflow: hidden;
+    color: white;
+  }
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  .original-price {
+    text-decoration: line-through;
+    margin-left: 8px;
+    color: #888 ;
+  }
+  .discount {
+    background: #444 !important;
+    color: #fff !important;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 2px 8px;
+    margin-left: 10px;
+  }
+  .rating {
+    color: limegreen !important;
+  }
+  .delivery {
+    font-size: 0.9rem;
+    color: #ccc !important;
+    margin-top: 8px;
+  }
+
